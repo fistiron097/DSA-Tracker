@@ -1,3 +1,4 @@
+package DP;
 public class fractional_knap {
     public static int fibSeq(int n){
         if(n == 0 || n == 1){

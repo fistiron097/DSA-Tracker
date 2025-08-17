@@ -1,3 +1,4 @@
+package DP;
 public class longestCommonSub{
     public static int lcsTab(String str1, String str2){
         int n = str1.length();

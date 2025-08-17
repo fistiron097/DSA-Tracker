@@ -1,3 +1,4 @@
+package DP;
 public class memoization_with_techniques{
     public static int fib(int n, int f[]){
         // linear time complexity with DP and exponential with recursion 

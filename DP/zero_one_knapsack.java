@@ -1,3 +1,4 @@
+package DP;
 public class zero_one_knapsack {
     public static int knapsack(int val[], int wt[], int W, int n){
         if(W == 0 || n == 0){

@@ -1,3 +1,4 @@
+package DP;
 public class lcs {
     // Recursion code:- Time limit exceed(Worst complexity)
     public static int lcs(String str1, String str2, int n, int m){
