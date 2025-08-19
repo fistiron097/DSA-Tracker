@@ -36,9 +36,9 @@ public class unbounded__knap {
 
 
     public static void main(String[]args){
-        int val[] = {15,14,10,45,30};
-        int wt[] = {2,5,1,3,4};
-        int W = 7;
+        int val[] = {6, 1, 7, 7};
+        int wt[] = {1, 3, 4, 5};
+        int W = 8;
         System.out.println(unboundedKnapsack(val, wt, W));
     }
 }

@@ -1,5 +1,7 @@
 package DP;
 public class coin_exchange{
+    // Variation of Unbound knapsack
+    // Reach a given score - with coins or choice availabe 3,5,10
     public static int coinExchange(int [] coins, int sum){
         int n = coins.length;
         int [][]dp = new int[n+1][sum+1];
@@ -34,8 +36,8 @@ public class coin_exchange{
     }
 
     public static void main(String[]args){
-        int [] coins = {2,5,3,6};
-        int sum = 10;
+        int [] coins = {3,5,10};
+        int sum = 20;
         System.out.println(coinExchange(coins, sum));
     }
 }

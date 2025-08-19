@@ -14,7 +14,7 @@ public class catalan {
         return dp[n];
     }
     public static void main(String[]args){
-        int n =4;
+        int n =2;
         System.out.println(catalanTab(n));
     }
 }

@@ -15,10 +15,11 @@ public class longestCommonSub{
         }
         for(int i=1; i < n+1; i++){
             for(int j=1; j < m+1; j++){
-                if(str1.charAt(i-1) == str2.charAt(m-1)){
+                if(str1.charAt(i-1) == str2.charAt(m-1) && i != j){
                     dp[i][j] = dp[i-1][j-1] +1;
                     ans = Math.max(ans,dp[i][j]);
                 }else{
+                    // we put here 0 because our logic says whenever characters matches fine as soon as it stopped we make our count value to 0
                     dp[i][j] = 0;
                 }
             }
@@ -26,7 +27,9 @@ public class longestCommonSub{
         return ans;
     }
     public static void main(String[]args){
-        String str1 = "ABCDE";
-        String str2 = "ABGCE";
+        String str1 = "axxy";
+        String str2 = "axxy";
+        System.out.println(lcsTab(str1, str2));
+        
     }
 }
